@@ -212,6 +212,10 @@ section {
   gap: 1rem;
 }
 
+.picture-circle {
+  border-radius: 50%;
+}
+
 /* Icons */
 
 .icon {

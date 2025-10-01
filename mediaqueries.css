@@ -1,34 +1,65 @@
-/* Responsive Design */
-@media (max-width: 768px) {
+/* Reduced motion for accessibility */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
 
+/* Tablet and Mobile Styles (max-width: 768px) */
+@media (max-width: 768px) {
+  /* Typography adjustments */
+  .section-title {
+    font-size: 2rem;
+  }
+  
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+
+  /* Layout adjustments */
   .about-content,
   .contact-container {
     flex-direction: column;
   }
 
-  .hero h1 {
-    font-size: 2.5rem;
+  /* Navigation */
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    gap: 15px;
   }
 
+  /* Hero section */
   .hero-buttons {
     flex-direction: column;
     gap: 10px;
   }
 
-  .nav-links {
-    display: none;
+  /* Hero social links */
+  .hero-social .social-links {
+    gap: 15px;
+  }
+  
+  .hero-social .social-links a {
+    width: 45px;
+    height: 45px;
+    font-size: 1.2rem;
   }
 
+  /* Timeline adjustments */
   .timeline::after {
     left: 31px;
   }
-
+  
   .timeline-item {
     width: 100%;
     padding-left: 70px;
     padding-right: 25px;
   }
-
+  
   .timeline-item:nth-child(even) {
     left: 0;
   }

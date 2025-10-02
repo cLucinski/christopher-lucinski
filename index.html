@@ -4,235 +4,304 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Chris Lucinski Portfolio</title>
+  <title>Christopher Lucinski - Portfolio</title>
+  <meta name="description" content="Christopher Lucinski's personal portfolio showcasing projects, skills, and experience as a Software Developer.">
+  <meta name="author" content="Christopher Lucinski">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="mediaqueries.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <script src="script.js"></script>
 </head>
 
 <body>
-  <nav id="desktop-nav">
-    <div class="logo">Christopher Lucinski</div>
-    <div>
-      <ul class="nav-links">
-        <li><a href="#about" class="header-link">About</a></li>
-        <li><a href="#experience"  class="header-link">Experience</a></li>
-        <li><a href="#projects" class="header-link">Projects</a></li>
-        <li><a href="#contact" class="header-link">Contact</a></li>
-      </ul>
-    </div>
-  </nav>
-
-  <nav id="hamburger-nav">
-    <div class="logo">Christopher Lucinski</div>
-    <div class="hamburger-menu">
-      <div class="hamburger-icon" onclick="toggleMenu()">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-      <div class="menu-links">
-        <ul>
-          <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-  <section id="profile">
-    <div class="section__pic-container">
-      <img class="picture-circle" src="./assets/profile-pic-square.jpg" alt="Christopher Lucinski pfp">
-    </div>
-    <div class="section__text">
-      <p class="section__text__p1">Hello, I'm</p>
-      <h1 class="title">Christopher Lucinski</h1>
-      <p class="section__text__p2">Software Developer</p>
-      <div class="btn-container">
-        <button class="btn btn-color-2" onclick="window.open('./assets/technincal-resume.pdf')">Download CV</button>
-        <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact Info</button>
-      </div>
-      <div id="socials-container">
-        <img src="./assets/linkedin.png" alt="My LinkedIn Profile" class="icon" onclick="location.href='https://www.linkedin.com/in/christopher-lucinski'">
-        <img src="./assets/github.png" alt="My GitHub Profile" class="icon" onclick="location.href='https://github.com/cLucinski'">
-      </div>
-    </div>
-  </section>
-  
-  <section id="about">
-    <p class="section__text__p1">Get To Know More</p>
-    <p class="title">About Me</p>
-    <div class="section-container">
-      <div class="section__pic-container">
-        <img class="about-pic" src="./assets/profile-pic-greyscale.jpg" alt="Profile picture">
-      </div>
-      <div class="about-details-container">
-        <div class="about-container">
-          <div class="details-container">
-            <img src="./assets/education.png" alt="Education icon" class="icon">
-            <h3>Education</h3>
-            <p>University of Guelph</p>
-            <h4>Bachelor of Computing, Honours</h4>
-            <p>Major Computer Science<br>Minor Psychology</p>
-          </div>
-          <div class="details-container">
-            <img src="./assets/experience.png" alt="Experience icon" class="icon">
-            <h3>Experience</h3>
-            <p>4+ years <br>Software Development</p>
-          </div>
-        </div>
-        <div class="text-container">
-          <p>I am a recent Computer Science graduate with a passion for backend development, quality assurance, and extracting insights from data. Throughout my academic journey and co-op work terms, I have developed a strong foundation in computer science principles and am eager to apply my skills in real-world scenarios. I am motivated, detail-oriented, and excited to contribute my technical expertise to innovative projects.
-            </p>
-        </div>
-      </div>
-    </div>
-    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'" />
-  </section>
-
-
-  <section id="projects">
-    <p class="section__text__p1">Browse My Recent</p>
-    <h1 class="title">Projects</h1>
-    <div class="experience-details-container">
-      <div class="about-container">
-        <div class="details-container color-container">
-          <div class="article-container">
-            <img
-              src="./assets/project-1.png"
-              alt="Project 1"
-              class="project-img"
-            />
-          </div>
-          <h2 class="experience-sub-title project-title">Project One</h2>
-          <div class="btn-container">
-            <a href="https://github.com/" target="_blank">
-              <button class="btn btn-color-2 project-btn">GitHub</button>
-            </a>
-            <a href="https://github.com/" target="_blank">
-              <button class="btn btn-color-2 project-btn">Live Demo</button>
-            </a>
-          </div>
-        </div>
-        <!-- <div class="details-container color-container">
-          <div class="article-container">
-            <img
-              src="./assets/project-2.png"
-              alt="Project 2"
-              class="project-img"
-            />
-          </div>
-          <h2 class="experience-sub-title project-title">Project Two</h2>
-          <div class="btn-container">
-            <a href="https://github.com/" target="_blank">
-              <button class="btn btn-color-2 project-btn">GitHub</button>
-            </a>
-            <a href="https://github.com/" target="_blank">
-              <button class="btn btn-color-2 project-btn">Live Demo</button>
-            </a>
-          </div>
-        </div>
-        <div class="details-container color-container">
-          <div class="article-container">
-            <img
-              src="./assets/project-3.png"
-              alt="Project 3"
-              class="project-img"
-            />
-          </div>
-          <h2 class="experience-sub-title project-title">Project Three</h2>
-          <div class="btn-container">
-            <a href="https://github.com/" target="_blank">
-              <button class="btn btn-color-2 project-btn">GitHub</button>
-            </a>
-            <a href="https://github.com/" target="_blank">
-              <button class="btn btn-color-2 project-btn">Live Demo</button>
-            </a>
-          </div>
-        </div> -->
-      </div>
-    </div>
-    <img
-      src="./assets/arrow.png"
-      alt="Arrow icon"
-      class="icon arrow"
-      onclick="location.href='./#contact'"
-    />
-  </section>
-
-  <section id="experience">
-    <p class="section__text__p1">Explore My</p>
-    <h1 class="title">Experience</h1>
-    <div class="experience-details-container">
-      <div class="about-container">
-        <!-- <div class="details-container">
-          <h2 class="experience-sub-title">[Title]</h2>
-          <div class="article-container">
-            <article>
-              <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
-              <div>
-                <h3>[Item]</h3>
-                <p>[Subtitle]</p>
-              </div>
-            </article>
-            
-          </div>
-        </div>
-        <div class="details-container">
-          <h2 class="experience-sub-title">[Title]</h2>
-          <div class="article-container">
-            <article>
-              <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
-              <div>
-                <h3>[Item]</h3>
-                <p>[Subtitle]</p>
-              </div>
-            </article>
-          </div>
-        </div> -->
-      </div>
-    </div>
-    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'">
-  </section>
- 
-  <section id="contact">
-    <p class="section__text__p1">Get in Touch</p>
-    <h1 class="title">Contact Me</h1>
-    <div class="contact-info-upper-container">
-      <div class="contact-info-container">
-        <img
-          src="./assets/email.png"
-          alt="Email icon"
-          class="icon contact-icon email-icon"
-        />
-        <p><a href="mailto:chris.lucinski@gmail.com" class="header-link">chris.lucinski@gmail.com</a></p>
-      </div>
-      <div class="contact-info-container">
-        <img
-          src="./assets/linkedin.png"
-          alt="LinkedIn icon"
-          class="icon contact-icon"
-        />
-        <p><a href="https://www.linkedin.com/in/christopher-lucinski/" class="header-link">LinkedIn</a></p>
-      </div>
-    </div>
-  </section>
-  
-  <footer>
-    <nav>
-      <div class="nav-links-container">
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <nav>
+        <div class="logo">Christopher<span>Lucinski</span></div>
         <ul class="nav-links">
-          <li><a href="#about" class="header-link">About</a></li>
-          <li><a href="#experience" class="header-link">Experience</a></li>
-          <li><a href="#projects" class="header-link">Projects</a></li>
-          <li><a href="#contact" class="header-link">Contact</a></li>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <h1>Hi, I'm <span>Christopher Lucinski</span></h1>
+        <p>A Software Developer with a passion for building meaningful software and exploring the connections between data, technology, and people.</p>
+        <div class="hero-buttons">
+          <a href="./data/christopher_lucinski_F25_CV.pdf" class="btn" target="_blank" aria-label="Link to open PDF file of CV">View CV</a>
+          <a href="#contact" class="btn btn-outline" aria-label="Contact form link">Contact Me</a>
+        </div>
+        <!-- Social Links Section -->
+        <div class="hero-social">
+          <div class="social-links">
+            <a href="https://www.linkedin.com/in/christopher-lucinski/" target="_blank" aria-label="LinkedIn">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="https://github.com/cLucinski" target="_blank" aria-label="GitHub">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="https://www.instagram.com/christof_luch/" target="_blank" aria-label="Instagram">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </div>
+        </div>
       </div>
-    </nav>
-    <p>Copyright &#169; 2024 Christopher Lucinski. All Rights Reserved.</p>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
+    <div class="container">
+      <h2 class="section-title">About Me</h2>
+      <div class="about-content">
+        <div class="about-text">
+          <p>Hello! I'm Christopher Lucinski, a Software Developer based in Ontario with experience in full-stack
+            development, software project coordination, and AI training. I've learned to work with data, develop 
+            reliable software solutions, and collaborate effectively across technical and non-technical teams.</p>
+          <p>My interests focus on data science and geospatial technologies, where I enjoy using programming and 
+            analytical skills to solve real-world problems. I'm especially motivated by projects that make information 
+            more accessible and impactful.</p>
+          <p>Beyond coding, I'm curious about how people interact with technology and how thoughtful design can 
+            improve both usability and trust. I'm currently exploring opportunities to grow as a developer, deepen 
+            my knowledge in data and geospatial systems, and contribute to projects that have practical, lasting value.</p>
+        </div>
+        <div class="about-image">
+          <img src="./assets/computer_screen.png" alt="Cartoon computer screen">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section id="experience" class="experience">
+    <div class="container">
+      <h2 class="section-title">Work Experience</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-content">
+            <h3>Coding AI Model Trainer</h3>
+            <h4>Outlier AI - Remote</h4>
+            <div class="date">September 2024 to Present</div>
+            <ul>
+              <li>Training generative AI models by developing, reviewing, and optimizing multiple coding problems and
+                solutions across several programming languages (Java, Python, JavaScript, C++)</li>
+              <li>Improving and evaluating AI performance in accuracy and coding efficiency through detailed feedback
+                and evaluations</li>
+            </ul>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-content">
+            <h3>Computer Science Teaching Assistant</h3>
+            <h4>University of Guelph CCS - Guelph, ON</h4>
+            <div class="date">September 2023 to December 2023</div>
+            <ul>
+              <li>Supported over 100 students in a "Structure and Application of Microcomputers" course by providing
+                individualized feedback in weekly labs and guiding them through course material</li>
+              <li>Facilitated group discussions and workshops to improve collaborative learning among students</li>
+            </ul>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-content">
+            <h3>Software Developer (Co-op)</h3>
+            <h4>Camis Inc. - Guelph, ON</h4>
+            <div class="date">January 2022 to August 2022</div>
+            <ul>
+              <li>Spearheaded new Angular TypeScript web features and HTML/CSS content changes in customer booking
+                systems</li>
+              <li>Reproduced, fixed, and tested various software bugs, reducing reported issues by 25%</li>
+              <li>Collaborated in an Agile development environment with daily standups and sprint planning</li>
+            </ul>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-content">
+            <h3>Project Coordinator (Co-op)</h3>
+            <h4>University of Guelph CCS - Guelph, ON</h4>
+            <div class="date">June 2021 to August 2021</div>
+            <ul>
+              <li>Led sprint planning and retrospective meetings, enhancing team alignment</li>
+              <li>Managed team backlogs, wiki pages, and project artifacts</li>
+              <li>Produced detailed reports for internal meetings and public updates</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="projects">
+    <div class="container">
+      <h2 class="section-title">My Projects</h2>
+      <div class="projects-grid">
+        <div class="project-card">
+          <div class="project-image">
+            GIS Flood Risk Analysis
+          </div>
+          <div class="project-info">
+            <h3>GIS Flood Risk Analysis</h3>
+            <p>Python-based GIS workflow to analyze flood risk using spatial analysis and multi-source data integration.
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">Rasterio</span>
+              <span class="tech-tag">GeoPandas</span>
+              <span class="tech-tag">Matplotlib</span>
+            </div>
+            <a href="https://github.com/clucinski/project-flood" class="btn">View Project</a>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-image">
+            Real Estate Management System
+          </div>
+          <div class="project-info">
+            <h3>Real Estate Management System</h3>
+            <p>C# Windows Forms application with three-layer architecture for managing diverse property types.</p>
+            <div class="project-tech">
+              <span class="tech-tag">C#</span>
+              <span class="tech-tag">.NET</span>
+              <span class="tech-tag">Windows Forms</span>
+              <span class="tech-tag">OOP</span>
+            </div>
+            <a href="https://github.com/clucinski/real-estate-management-system" class="btn">View Project</a>
+          </div>
+        </div>
+        <!-- <div class="project-card">
+          <div class="project-image">
+            C# ASP.NET Web Application
+          </div>
+          <div class="project-info">
+            <h3>Data Visualization Web App</h3>
+            <p>C# ASP.NET MVC web application for displaying SQL data with interactive charts and visualizations.</p>
+            <div class="project-tech">
+              <span class="tech-tag">C#</span>
+              <span class="tech-tag">ASP.NET</span>
+              <span class="tech-tag">SQL</span>
+              <span class="tech-tag">MVC</span>
+            </div>
+            <a href="#" class="btn">View Project</a>
+          </div>
+        </div> -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills">
+    <div class="container">
+      <h2 class="section-title">My Skills</h2>
+      <div class="skills-container">
+        <div class="skill-category">
+          <h3>Programming Languages</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">C</span>
+            <span class="skill-tag">C#</span>
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">Java</span>
+            <span class="skill-tag">JavaScript</span>
+            <span class="skill-tag">TypeScript</span>
+            <span class="skill-tag">SQL</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3>Web Development</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">HTML</span>
+            <span class="skill-tag">CSS</span>
+            <span class="skill-tag">Angular</span>
+            <span class="skill-tag">.NET</span>
+            <span class="skill-tag">ASP.NET</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3>Tools & Methodologies</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Git</span>
+            <span class="skill-tag">GitHub</span>
+            <span class="skill-tag">Azure</span>
+            <span class="skill-tag">Jira</span>
+            <span class="skill-tag">Agile</span>
+            <span class="skill-tag">Scrum</span>
+            <span class="skill-tag">Kanban</span>
+            <span class="skill-tag">CI/CD</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2 class="section-title">Get In Touch</h2>
+      <div class="contact-container">
+        <div class="contact-info">
+          <h3>Let's talk!</h3>
+          <div class="contact-details">
+            <p><i class="fas fa-envelope"></i><a class="email-link" href="mailto:chris.lucinski@gmail.com">chris.lucinski@gmail.com</a></p>
+            <p><i class="fas fa-phone"></i> +1 (226) 349 8979</p>
+            <p><i class="fas fa-map-marker-alt"></i> Ontario, Canada</p>
+            <p><i class="fas fa-plane-departure"></i> Willing to relocate: Anywhere</p>
+          </div>
+          <div class="social-links">
+            <a href="https://www.linkedin.com/in/christopher-lucinski/" target="_blank" aria-label="Link to LinkedIn profile"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://github.com/cLucinski" target="_blank" aria-label="Link to GitHub profile"><i class="fab fa-github"></i></a>
+            <a href="https://www.instagram.com/christof_luch/" target="_blank" aria-label="Link to Instagram profile"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+
+        <div class="contact-form">
+          <form action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="f418dee9-8b26-46c9-b4b0-39b12402c112">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" autocomplete="name" required>
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" autocomplete="email" required>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" autocomplete="off" required></textarea>
+            </div>
+
+            <div class="form-group">
+              <input type="checkbox" id="botcheck" name="botcheck" class="hidden" placeholder="bot check">
+            </div>
+
+            <button type="submit" class="btn">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Christopher Lucinski. All rights reserved.</p>
+    </div>
   </footer>
-  
-  <script src="script.js"></script>
 </body>
 
 </html>

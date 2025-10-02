@@ -1,2 +1,2 @@
-# personal-portfolio-site
+# christopher-lucinski
  Project to house my personal portfolio.

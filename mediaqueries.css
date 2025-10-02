@@ -63,4 +63,11 @@
   .timeline-item:nth-child(even) {
     left: 0;
   }
+
+  /* Hero social links - larger for mobile */
+  .hero-social .social-links a {
+    width: 55px;
+    height: 55px;
+    font-size: 1.4rem;
+  }
 }
